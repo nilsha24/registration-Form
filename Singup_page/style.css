@@ -1,0 +1,32 @@
+#top-box{
+    border: 0.9px solid lightgrey;
+    width: 80%;
+    height: 700px; 
+    margin-left: 250px; 
+    margin-top: 23px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    font-family: 'Google Sans',arial,sans-serif;
+}
+#left-box{
+     /* border: 1px solid black;  */
+    height: 440px;
+    width: 47%;
+    margin: 40px;
+    
+    float: left;
+    
+}
+#righ-box{
+    border: 1px solid black;
+    height: 440px;
+    width: 37%;
+    margin-top: 40px;
+    float: left;
+}
+body{
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+
+
+}
