@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Form Validation</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"/>
+            <title>Login page</title>
+            <style>
+                    input[type=text], select {
+                      width: 100%;
+                      padding: 12px 20px;
+                      margin: 8px 0;
+                      display: inline-block;
+                      border: 1px solid #ccc;
+                      border-radius: 4px;
+                      box-sizing: border-box;
+                    }
+                    input[type=password], select {
+                      width: 100%;
+                      padding: 12px 20px;
+                      margin: 8px 0;
+                      display: inline-block;
+                      border: 1px solid #ccc;
+                      border-radius: 4px;
+                      box-sizing: border-box;
+                    }
+                    
+                    input[type=button] {
+                      width: 100%;
+                      background-color: rgb(127, 76, 175);
+                      color: white;
+                      padding: 14px 20px;
+                      margin: 8px 0;
+                      border: none;
+                      border-radius: 4px;
+                      cursor: pointer;
+                    }
+                    
+                    input[type=button]:hover {
+                      background-color: rgb(127, 76, 175);
+                    }
+                    
+                    div {
+                      border-radius: 5px;
+                      background-color: #f2f2f2;
+                      padding: 20px;
+                    }
+                    </style>
+                    <body>
+    </head>
+</body>
+<body>
+    <div>
+    <h1 style="text-align: center">Login Form</h1>
+    <form name="login">
+        <input type="text" name="userid" placeholder="Enter email" required/></br><br>
+        <input type="password" name="pswrd" placeholder="Enter password" required/>
+        <input type="button" onclick="check(this.form)" value="Login"/>
+    
+    </form>
+</div>
+    <script language="javascript">
+        function check(form) { 
+            
+            if(form.userid.value == "Alpha" && form.pswrd.value == "Beta") {
+               document.write("Login Success")
+                
+            }
+            else {
+                document.write("Login Failed")
+            }
+        }
+    </script>
+</body>
+</html>
