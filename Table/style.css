@@ -1,0 +1,22 @@
+body{
+
+margin:1px;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+}
+table{
+    text-align: center;
+}
+th{
+    background-color: green;
+    color:yellowgreen;
+    padding: 20px;
+    border: 2px black solid;
+
+}
+td{
+    font-size: 20px ; 
+    padding: 20px;
+    border: 2px black solid;
+
+}

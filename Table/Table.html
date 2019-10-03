@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+            <!-- Latest compiled and minified CSS -->
+             <link rel="stylesheet" href="style.css">
+             
+
+
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            
+            <!-- Latest compiled JavaScript -->
+ 
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+            </script>
+        </head>
+        <body>
+                <div id='text'></div>
+<script>
+var Player=['MS Dhoni','A Rahane','J Buttler','E Morgan','H Amla','B Stokes'];
+  var Country= ['IND','IND','ENG','ENG','SA','ENG'];
+  var Matches=[350,90,142,233,181,95];
+  var Runs=[10773,2962,3843,7348,8113,2682];
+  var Average=[50.57,35.3,40.9,46.75,49.5,40.6];
+  var text=document.getElementById('text');
+  var table='<table><thead><tr><th>S.No</th><th>Player</th><th>Country</th><th>Matches</th><th>Runs</th><th>Average</th></tr></thead><tbody>';
+  for(var i=0;i<=5;i++)
+  {
+      table+='<tr><td>'+ [i+1]+ '</td><td>'+Player[i]+'</td><td>'+Country[i]+'</td><td>'+Matches[i]+'</td><td>'+Runs[i]+'</td><td>'+Average[i]+'</td></tr>';
+  }  
+table+='</tbody></table>'
+text.innerHTML=table;
+</script>
+</body>
+</html>
