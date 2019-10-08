@@ -1,0 +1,30 @@
+<div class="container mt-6">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Department Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">GroupName</th>
+        <th scope="col">ModifiedDate</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Passsing let i =index in tr , We can pass the index to make to easier to delete -->
+      <tr *ngFor="let emp of employeelist">
+        <td>{{ emp.id}}</td>
+        <td>{{ emp.name | titlecase }}</td>
+        <td>{{ emp.GroupName}}</td>
+        <td>{{ emp.ModifiedDate }}</td>
+        <td>
+          <button class="btn " (click)="onEdit(emp)">
+           Edit
+          </button>
+          <button class="btn " (click)="onDelete(emp)">
+             Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
