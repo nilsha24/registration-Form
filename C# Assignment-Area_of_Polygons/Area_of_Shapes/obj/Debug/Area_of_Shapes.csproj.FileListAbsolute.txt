@@ -1,0 +1,5 @@
+C:\Users\nsharda3\Desktop\net\Area_of_Shapes\Area_of_Shapes\bin\Debug\Area_of_Shapes.exe.config
+C:\Users\nsharda3\Desktop\net\Area_of_Shapes\Area_of_Shapes\bin\Debug\Area_of_Shapes.exe
+C:\Users\nsharda3\Desktop\net\Area_of_Shapes\Area_of_Shapes\bin\Debug\Area_of_Shapes.pdb
+C:\Users\nsharda3\Desktop\net\Area_of_Shapes\Area_of_Shapes\obj\Debug\Area_of_Shapes.exe
+C:\Users\nsharda3\Desktop\net\Area_of_Shapes\Area_of_Shapes\obj\Debug\Area_of_Shapes.pdb

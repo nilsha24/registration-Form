@@ -1,0 +1,5 @@
+C:\Users\nsharda3\Desktop\net\Assignment-Bank Details\Assignment-Bank Details\bin\Debug\Assignment-Bank Details.exe.config
+C:\Users\nsharda3\Desktop\net\Assignment-Bank Details\Assignment-Bank Details\bin\Debug\Assignment-Bank Details.exe
+C:\Users\nsharda3\Desktop\net\Assignment-Bank Details\Assignment-Bank Details\bin\Debug\Assignment-Bank Details.pdb
+C:\Users\nsharda3\Desktop\net\Assignment-Bank Details\Assignment-Bank Details\obj\Debug\Assignment-Bank Details.exe
+C:\Users\nsharda3\Desktop\net\Assignment-Bank Details\Assignment-Bank Details\obj\Debug\Assignment-Bank Details.pdb
