@@ -1,0 +1,64 @@
+@model Project.Models.Sport_tournamentlist
+@{
+    ViewBag.Title = "CULTURAL";
+}
+<style>
+    body {
+        background-image: url('../Images/ff.jpg');
+    }
+</style>
+
+<body>
+    <div style="margin-left:1.8in; margin-bottom:.3in;">
+        <br>
+        <h2 class="mb-5" style="color:black">Please Select a Event</h2>
+    </div>
+
+    <div style="margin-top:.3in" ;>
+        <div col-sm-7 style="margin-left: 1.8in " ;>
+            <div style="margin-bottom:-.1in" ;>
+                @Html.DropDownList("CategoryID", ViewBag.events as SelectList, "select Event", new { @class = "form-control form-control-lg col-sm-12" })
+            </div>
+        </div>
+
+        <div class="col-sm-2">
+            <input type="submit" class="form-control" style="background-color:red;" value="Submit">
+
+        </div>
+    </div>
+    <div style="margin-top:.5in" ;>
+        <div style="margin-left:2in" ;>
+            <div id="divPartialView">
+
+            </div>
+
+            @Html.ActionLink("Teams", "maketeams", "SPORTS")
+        </div>
+    </div>
+</body>
+
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#CategoryID").change(function () {
+            var Cid = document.getElementById("CategoryID").value;
+
+            // alert(Cid)
+
+            $.ajax({
+                type: "post",
+                url: "/CULTURALS/_mypartial?Cid=" + Cid,
+                contentType: "html",
+                success: function (response) {
+                    //     debugger
+                    //            console.log(response);
+                    $("#divPartialView").empty();
+                    $("#divPartialView").append(response)
+                }
+            })
+        })
+    })
+
+</script>
+

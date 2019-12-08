@@ -1,0 +1,87 @@
+@model Project.Models.Cultural_eventlist
+@{
+    Layout = null;
+}
+
+    <div style="margin-left:-.1in; margin-bottom:.3in;">
+        <br>
+        <h2 class="mb-5" style="color:black">Details of Selected Event</h2>
+    </div>
+
+@using (Html.BeginForm())
+{
+<div style="margin-left:.1in;">
+    <table class="table-responsive">
+
+        <div class="col-sm-2" style="color:red">
+            <font size="4">
+                <b>
+                    DATE:
+                </b>
+        </div>
+        <div class="col-sm-2" style="color:red">
+            <font size="4">
+                <b>
+                    TIME:
+                </b>
+        </div>
+        <div class="col-sm-2" style="color:red">
+            <font size="4">
+                <b>
+                    VENUE:
+                </b>
+        </div>
+
+
+        <br>
+        @foreach (var item in ViewBag.ASQ)
+        {
+            <div class="col-sm-2" style="color:red">
+                <font size="4">
+                    <b>
+
+                        <text>@item.event_date</text>
+                    </b>
+            </div>
+
+            <div class="col-sm-2" style="color:red">
+                <font size="4">
+                    <b>
+                        <text>@item.event_time</text>
+                    </b>
+            </div>
+            <div class="col-sm-2" style="color:red">
+                <font size="4">
+                    <b>
+
+                        <text>@item.event_venue</text>
+                    </b>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+
+
+
+            <div style="color:black">
+                <h2 class="mb-4" style="margin-left:-.1in; margin-bottom:.1in;">Please register here</h2>
+                
+                    @Html.ActionLink("Register Individually", "addini", new { id = @item.cul_evid }, new { @class = "GetResult" })          
+                
+            </div>
+
+
+        }
+
+    </table>
+</div>
+}
+
+
+
+
+
+
+

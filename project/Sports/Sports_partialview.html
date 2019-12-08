@@ -1,0 +1,78 @@
+@model Project.Models.Sport_tournamentlist
+@{
+    Layout = null;
+}
+
+
+
+<div style="margin-left:-.1in; margin-bottom:.3in;">
+    <br>
+    <h2 class="mb-5" style="color:black">Details of Selected Sport</h2>
+</div>
+
+
+@using (Html.BeginForm())
+{
+    <div style="margin-left:.1in;">
+        <table class="table-responsive">
+            
+                <div class="col-sm-2" style="color:red">
+                    <font size="4">
+                        <b>
+                            DATE:
+                        </b>
+</div>
+                <div class="col-sm-2" style="color:red">
+                    <font size="4">
+                        <b>
+                        TIME:
+                         </b>
+                </div>
+                <div class="col-sm-2" style="color:red">
+                    <font size="4">
+                        <b>
+                            VENUE:
+                            </b>
+                </div>
+
+              
+                <br>
+                @foreach (var item in ViewBag.ASQ)
+                {
+                     <div class="col-sm-2" style="color:red">
+                         <font size="4">
+                             <b>
+                                 <text>@item.sport_date</text>
+                             </b>
+                     </div>
+
+                     <div class="col-sm-2" style="color:red">
+                         <font size="4">
+                             <b>
+                                 <text>@item.sport_time</text>
+                             </b>
+                     </div>
+                     <div class="col-sm-2" style="color:red">
+                         <font size="4">
+                             <b>
+                                 <text>@item.sport_venue</text>
+                             </b>
+                     </div>
+              
+
+                        <br>                        <br>                        <br>
+
+                        <div style="color:black">
+                            <h2 class="mb-4" style="margin-left:-.1in; margin-bottom:.3in;">Select team as Individual or as a Whole Team</h2>
+                            <b>
+                            @Html.ActionLink("Register as Team", "addteam", new { id = @item.sports_evid, @class = "form-control" }) |
+                            @Html.ActionLink("Register Individually", "addini", new { id = @item.sports_evid, @class = "form-control" })
+                             </b>
+                        </div>
+
+                        }
+</table>
+    </div>
+   
+}
+
